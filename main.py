@@ -6,7 +6,7 @@ pk = PrivateKey.parse("5J64pq77XjeacCezwmAr2V1s7snvvJkuAz8sENxw7xCkikceV6e")
 pk.address()
 dust_tx = bytes.fromhex("2a29fdb4e188f827da3c3175856b3ed95819b323bb303a46b8036534e78c76db")
 dust_index = 0
-send_dust = "1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC"
+send_dust = "1KDUcZh5Z6H1of4Pwoy5ojJtkQxcQBHhnH"
 tx_in = TxIn(dust_tx, dust_index, b'', 0xffffffff)
 tx_in._script_pubkey = Tx.get_address_data(pk.address())['script_pubkey']
 tx_in._value = 30352330
